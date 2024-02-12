@@ -83,14 +83,11 @@ section {
   position: relative;
 }
 
-section h2 {
-  text-align: center;
+h2 {
   color: #333;
   font-size: 1.4rem;
   margin-bottom: 1.7rem;
   font-weight: bold;
-  background-color: #a3a3a3;
-  padding: 0px 1em;
 }
 
 h1 {
@@ -101,7 +98,7 @@ h1 {
   margin-bottom: 0.7em;
 }
 
-h2 {
+h3 {
   /* articoli correlati */
   text-align: center;
   text-transform: uppercase;
