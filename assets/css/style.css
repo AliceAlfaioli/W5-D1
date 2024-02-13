@@ -25,6 +25,9 @@ header {
   color: white;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 576px) {
@@ -76,6 +79,11 @@ main {
   margin-bottom: 1.5em;
 }
 
+img {
+  float: left;
+  position: relative;
+}
+
 section {
   background-color: #e3e3e3;
   padding: 1.5em 1em;
@@ -91,6 +99,7 @@ h2 {
 }
 
 h1 {
+  /*titolo */
   font-size: 2.6rem;
   line-height: 1.2;
   font-weight: bold;
@@ -98,11 +107,49 @@ h1 {
   margin-bottom: 0.7em;
 }
 
+.underline {
+  /* UNDERLINE ----------------------------------------*/
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  background-image: url("../img/underline.svg"); /* immagine di sottolineatura */
+  position: absolute;
+  right: -0;
+  bottom: -5px; /* posiziono l'immagine sotto il testo */
+  width: 100%;
+  height: 5px; /* altezza dell'immagine */
+}
+
 h3 {
   /* articoli correlati */
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 20px;
+}
+
+/*ETICHETTA ----------------------------*/
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  background-color: #f0f0f0;
+  overflow: hidden; /* il contenuto non esca dalla card */
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #726d6d;
+  padding: 5px 10px;
+}
+
+.content {
+  padding: 20px;
 }
 
 p,
@@ -214,6 +261,22 @@ input {
   padding: 5px;
   border: 0;
   border-bottom: 1px dashed #333;
+}
+
+.container-news {
+  /*NEWS -------------------------------------*/
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.news-box {
+  position: absolute;
+  top: -40px; /* Sporge leggermente dall'alto */
+  left: 50%;
+  background-color: #979090;
+  padding: 5px 10px;
+  border-radius: 0px;
 }
 
 button {
